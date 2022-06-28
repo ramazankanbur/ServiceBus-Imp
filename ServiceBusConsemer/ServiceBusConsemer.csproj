@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Azure.Messaging.ServiceBus" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.7.0" />
-  </ItemGroup>
 </Project>

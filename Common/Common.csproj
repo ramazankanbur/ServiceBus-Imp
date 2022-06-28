@@ -1,16 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Azure.Messaging.ServiceBus" />
+    <None Remove="dto\" />
+    <None Remove="dto\OrderDto.json" />
+    <None Remove="Events\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.7.0" />
+    <Folder Include="dto\" />
+    <Folder Include="Events\" />
   </ItemGroup>
 </Project>
